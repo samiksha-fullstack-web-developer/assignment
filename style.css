@@ -500,5 +500,8 @@ input[type="radio"]:checked {
   .sticky li a{
     font-size: 16px !important;
   }
+  .venue-content{
+    padding-right: 70px !important;
+  }
 
 }
