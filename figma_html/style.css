@@ -1,0 +1,504 @@
+@font-face {
+  font-family: "BODIGAKO";
+  src: url("fonts/BODIGAKO\ Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Urbanist", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+.sticky {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: #ffffff9f;
+}
+li a {
+  font-size: 18px;
+  color: #414042;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+li:active {
+  color: #d9886a;
+  font-weight: 500;
+  font-style: italic;
+}
+li a:hover {
+  color: #d9886a;
+}
+.btn {
+  background-color: #d9886a;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 3%;
+  padding: 19px 48.5px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: #b8a886;
+  color: #ffffff;
+}
+
+/* hero section */
+.hero-section {
+  background-image: url("./images/groom-putting-ring-bride-s-finger.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+  height: calc(100vh - 150px);
+}
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(24px);
+  width: 750px;
+  padding: 50px;
+  padding-bottom: 80px;
+}
+.heading {
+  font-family: "BODIGAKO";
+  font-size: 82px;
+  font-weight: 400;
+  line-height: 82px;
+  color: #414042;
+  text-transform: uppercase;
+}
+.hero-para {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.16px;
+  color: #414042;
+}
+.hero-btn {
+  padding: 19px 106px;
+  position: relative;
+  top: -35px;
+}
+.hero-section {
+  position: relative;
+}
+.hero-section::after {
+  position: absolute;
+  content: "";
+  background-image: url("/images/Group.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 1;
+  width: 150.42px;
+  height: 384.87px;
+  bottom: -130px;
+  left: 0;
+}
+
+/* main */
+.para {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 13px;
+  text-transform: uppercase;
+  color: #b8a886;
+}
+
+.venue-heading {
+  line-height: 82px;
+  letter-spacing: 5px;
+  color: #414042;
+  margin-top: 41px;
+}
+
+.image-venue {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+button.custom-prev.slick-arrow {
+  position: absolute;
+  top: 280px;
+  left: -40px;
+  padding: 25px 28px;
+  border-radius: 50px;
+  color: #b8a886;
+  z-index: 20;
+  background-color: #f5f6f0;
+  font-size: 20px;
+}
+button.custom-next.slick-arrow {
+  position: absolute;
+  right: -40px;
+  top: 280px;
+  padding: 25px 28px;
+  border-radius: 50px;
+  font-size: 50px;
+  color: #b8a886;
+  z-index: 20;
+  background-color: #f5f6f0;
+  font-size: 20px;
+}
+.custom-prev:focus,
+.custom-next:focus {
+  outline: none;
+}
+
+.location .custom-prev.slick-arrow {
+  position: absolute;
+  background-color: white;
+  color: #d9886a;
+  top: 620px;
+  left: 40px;
+  padding: 21px 23px;
+  font-size: 12px;
+}
+.location .custom-next.slick-arrow {
+  position: absolute;
+  background-color: white;
+  color: #d9886a;
+  top: 620px;
+  right: 520px;
+  padding: 21px 23px;
+  font-size: 12px;
+}
+.paragraph {
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 49px;
+  color: #414042;
+  margin-top: 60px;
+}
+.main-section {
+  position: relative;
+}
+.main-section::before {
+  position: absolute;
+  content: "";
+  background-image: url("images/Group 1331.png");
+  right: 0;
+  top: 0;
+  width: 272px;
+  height: 302.44px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* location styling */
+.loc-heading {
+  font-size: 66px;
+  line-height: 75px;
+  font-family: "BODIGAKO";
+  text-transform: uppercase;
+  color: #414042;
+}
+
+.loc-paragraph {
+  font-size: 24px;
+  color: #414042;
+  line-height: 33px;
+}
+.loc-btn {
+  background-color: #b8a886;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  padding: 19.5px 46px;
+}
+.loc-btn:hover {
+  background-color: #d9886a;
+  color: white;
+}
+.location {
+  position: relative;
+  background-color: white;
+  box-shadow: 20px 24px 104px rgba(0, 0, 0, 6%);
+}
+.location::before {
+  position: absolute;
+  content: " ";
+  background-image: url("images/location.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 115.53px;
+  height: 295.59px;
+  right: -35px;
+  bottom: -200px;
+  z-index: 1;
+}
+.subheading {
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 29px;
+  color: #414042;
+  padding-top: 50px;
+}
+.cont {
+  width: 610px;
+  padding: 37px 44px;
+  margin-bottom: 18px;
+  border-left: 2px solid #d9886a;
+  background-color: white;
+}
+.cont-heading {
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 29px;
+  color: #414042;
+}
+.cont-para {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #7e7e7e;
+}
+.wedding-style {
+  position: relative;
+  background-color: #dcd4d41b;
+}
+.wedding-style::after {
+  position: absolute;
+  content: "";
+  background-image: url(images/wedding.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 115.53px;
+  height: 295.59px;
+  left: 0;
+  bottom: -50px;
+}
+
+/* map styling */
+
+td {
+  vertical-align: middle;
+}
+td img {
+  padding: 45px 60px 50px 60px;
+}
+.time {
+  font-size: 24px;
+  font-weight: 600;
+  color: #414042;
+  line-height: 33px;
+}
+.map-heading {
+  font-family: "BODIGAKO";
+  font-weight: 400;
+  font-size: 46px;
+  text-transform: uppercase;
+  line-height: 75px;
+  color: #414042;
+}
+.map-para {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 33px;
+  color: #414042;
+  margin-top: 10px;
+}
+.map-btn {
+  padding: 19px 310px;
+}
+
+.map {
+  position: relative;
+}
+.map::after {
+  position: absolute;
+  content: "";
+  background-image: url(images/Group\ 1357.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 247px;
+  height: 274.64px;
+  left: 0;
+  bottom: 0;
+}
+
+.acc-content {
+  background-color: white;
+  box-shadow: 20px 24px 104px rgba(0, 0, 0, 6%);
+}
+.acc-heading {
+  font-size: 66px;
+  font-family: "BODIGAKO";
+  line-height: 75px;
+  color: #414042;
+}
+.form-wrapper {
+  position: relative;
+}
+.form-wrapper::before {
+  position: absolute;
+  content: "";
+  background-image: url(images/location.png);
+  width: 115.53px;
+  height: 295.59px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 0px;
+  top: -10px;
+}
+.form-heading {
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #414042;
+}
+.form-para {
+  font-size: 18px;
+  font-weight: 600;
+  color: #7e7e7e;
+  line-height: 32px;
+}
+input {
+  width: 100%;
+  border: 1px solid #ead9ab;
+  padding: 20px;
+}
+input[type="radio"] {
+  width: auto;
+}
+input[type="radio"]:checked {
+  background-color: #7e7e7e;
+}
+.form-container {
+  position: relative;
+  background-color: white;
+  box-shadow: 20px 24px 104px rgba(0, 0, 0, 6%);
+}
+.form-container::after {
+  position: absolute;
+  content: "";
+  background-image: url(images/Group\ 1357.png);
+  width: 191.56px;
+  height: 213px;
+  bottom: 0;
+  left: 0;
+}
+.form-container::before {
+  position: absolute;
+  content: "";
+  background-image: url(images/Group\ 1331.png);
+  width: 191.56px;
+  height: 213px;
+  top: 0;
+  right: 0;
+}
+.gif {
+  background-image: url(images/DSC_2709.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 144px 200px 673px 200px;
+}
+.gif-content {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(24px);
+  width: 65%;
+  padding: 82px 137px 82px 137px;
+  text-align: center;
+}
+.gifbtn {
+  padding: 19px 48.5px;
+  font-size: 18px;
+  background-color: #b8a886;
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+.gifbtn:hover {
+  background-color: #d9886a;
+}
+.gif-para {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #414042;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+.gif-heading {
+  font-family: "BODIGAKO";
+  font-size: 66px;
+  line-height: 75px;
+  color: #414042;
+  margin-top: 30px;
+}
+
+/* footer */
+.social {
+  margin-top: 37px;
+  margin-bottom: -50px;
+}
+.icon {
+  background-color: #f5f6f0;
+  width: 60px;
+  height: 60px;
+}
+.copyright {
+  font-size: 18px;
+  font-weight: 600;
+  color: #7e7e7e;
+}
+.footer-section {
+  position: relative;
+}
+.footer-section::after {
+  position: absolute;
+  content: "";
+  background-image: url("./images/Group 1357.png");
+  background-repeat: no-repeat;
+  width: 236.56px;
+  height: 263.04px;
+  left: 0;
+  bottom: -100px;
+}
+.footer-section::before {
+  position: absolute;
+  content: "";
+  background-image: url("./images/Group 1351.png");
+  background-repeat: no-repeat;
+  width: 236.56px;
+  height: 263.04px;
+  right: 0;
+  bottom: -100px;
+}
+
+
+
+
+@media (min-width: 1200px) and (max-width:1366px ){
+  .container{
+    max-width: 1240px !important;
+  }
+  .sticky li a{
+    font-size: 16px;
+  }
+
+}
