@@ -386,6 +386,9 @@ input[type="radio"] {
 input[type="radio"]:checked {
   background-color: #7e7e7e;
 }
+input:focus{
+  outline: none;
+}
 .form-container {
   position: relative;
   background-color: white;
@@ -490,20 +493,17 @@ input[type="radio"]:checked {
   bottom: -100px;
 }
 
-
-
-
-@media (min-width: 1200px) and (max-width:1366px ){
-  .container{
+@media (min-width: 1200px) and (max-width: 1366px) {
+  .container {
     max-width: 1240px !important;
   }
-  .sticky li a{
+  .sticky li a {
     font-size: 16px !important;
   }
-  .venue-content{
+  .venue-content {
     padding-right: 70px !important;
   }
-.location::before {
-  right: 0px !important;
-}
+  .location::before {
+    right: 0px !important;
+  }
 }

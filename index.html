@@ -173,10 +173,11 @@
           <div class="map-loc">
             <img
               src="images/Montage Laguna Beach Resort Map JPG.png"
-              alt=""
+              alt="Map"
               width="1400px"
             />
           </div>
+ 
           <div
             class="map-content flex flex-row items-start"
             style="padding-top: 73px"
@@ -286,12 +287,21 @@
             <img
               src="images/Container images.png"
               alt=""
-              style=" width: 100%;"
+              style=" width: 100%;" onclick="openLightbox(this)"
             />
+          </div>
+          <!-- Lightbox Modal -->
+        <div id="lightbox" class="hidden fixed inset-0 bg-white bg-opacity-75 flex items-center justify-center z-50">
+          <!-- Close button -->
+          <span class="text-black text-4xl cursor-pointer" onclick="closeLightbox()" style="position: absolute; top: 100px; right: 580px;">&times;</span>
+          
+          <!-- Lightbox Image (fixed size with Tailwind) -->
+          <img id="lightbox-img" src="" alt="Expanded Image" 
+              style="width: 450px; height: 550px;">
+        </div>
           </div>
         </div>
       </div>
-    </div>
 
     <!--Accomodations-->
     <div
@@ -301,8 +311,16 @@
       <div class="container">
         <div class="acc-content shadow-md flex flex-row items-center">
           <div class="acc-img" style="width: 50%">
-            <img src="images/image.png" alt="" style="width: 100%" />
+            <img src="images/image.png" alt="" style="width: 100%"  onclick="openLightbox(this)"/>
           </div>
+          <div id="lightbox" class="hidden fixed inset-0 bg-white bg-opacity-75 flex items-center justify-center z-50">
+          <!-- Close button -->
+          <span class="text-black text-4xl cursor-pointer" onclick="closeLightbox()" style="position: absolute; top: 100px; right: 580px;">&times;</span>
+          
+          <!-- Lightbox Image (fixed size with Tailwind) -->
+          <img id="lightbox-img" src="" alt="Expanded Image" 
+              style="width: 450px; height: 550px;">
+        </div>
           <div
             class="acc-cont"
             style="width: 50%; padding: 125px 106px 125px 119px"
@@ -348,8 +366,17 @@
             </p>
           </div>
           <div class="wed-image" style="width: 55%">
-            <img src="images/image (1).png" alt="" width="100%" />
+            <img src="images/image (1).png" alt="" width="100%" onclick="openLightbox(this)" />
           </div>
+            <div id="lightbox" class="hidden fixed inset-0 bg-white bg-opacity-75 flex justify-end z-50 ">
+          <!-- Close button -->
+          <span class="text-black text-4xl cursor-pointer" onclick="closeLightbox()" style="position: absolute; top: 100px; right: 580px;">&times;</span>
+          
+          <!-- Lightbox Image (fixed size with Tailwind) -->
+          <img id="lightbox-img" src="" alt="Expanded Image" style="width: 100%; height: 100%;">
+
+      
+        </div>
         </div>
       </div>
     </div>
@@ -542,9 +569,7 @@
           { breakpoint: 600, settings: { arrows: true, dots: true } },
         ],
       });
-    </script>
-
-    <script>
+   
       //add sticky header 
       let header = document.getElementById('sticky');
       window.addEventListener("scroll", function(){
@@ -555,6 +580,18 @@
           header.classList.remove("sticky");
         }
       })
+
+        //lightbox
+        function openLightbox(img) {
+          const lightbox = document.getElementById('lightbox');
+          const lightboxImg = document.getElementById('lightbox-img');
+          lightbox.classList.remove('hidden');
+          lightboxImg.src = img.src;
+        }
+
+        function closeLightbox() {
+          document.getElementById('lightbox').classList.add('hidden');
+        }
     </script>
   </body>
 </html>
