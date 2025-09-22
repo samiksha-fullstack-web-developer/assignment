@@ -497,7 +497,7 @@ input[type="radio"]:checked {
   .container{
     max-width: 1240px !important;
   }
-  .sticky li a{
+  .menu li a{
     font-size: 16px !important;
   }
   .venue-content{
@@ -505,6 +505,5 @@ input[type="radio"]:checked {
   }
 .location::before {
   right: 0px !important;
-
 }
 }
