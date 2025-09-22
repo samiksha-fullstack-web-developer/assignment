@@ -498,7 +498,7 @@ input[type="radio"]:checked {
     max-width: 1240px !important;
   }
   .sticky li a{
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
 }
