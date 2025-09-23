@@ -577,14 +577,23 @@ input:focus {
 }
 .custom-prev.slick-arrow{
     top: 175px !important;
-    left: -27px !important;
+    left: -18px !important;
     padding: 10px 13px !important;
 }
 .custom-next.slick-arrow{
     top: 175px !important;
-    right: -27px !important;
+    right: -18px !important;
     padding: 10px 13px !important;
 }
+.location .custom-prev.slick-arrow{
+  top: 280px !important;
+  left: 20px !important;
+}
+.location .custom-next.slick-arrow{
+  top: 280px !important;
+  right: 220px !important;
+}
+
 
 /* location */
 .main{
@@ -728,6 +737,9 @@ input:focus {
 .form-wrapper .heading{
   font-size: 39px !important;
 }
+.bk-img{
+  padding-bottom: 80px !important;
+}
 .form-para{
   padding: 0px !important;
   margin-top: 8px !important;
@@ -757,6 +769,7 @@ input:focus {
 }
 input{
   width: 100%;
+  height: 51px;
 }
 .form{
   padding: 10px !important;
