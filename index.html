@@ -35,8 +35,7 @@
     <!-- Nav Menu -->
     <div class="sticky" id="sticky">
       <div class="container">
-        <nav
-          class="menu-wrapper flex items-center place-content-between px-8 pt-8 pb-8 pe-8"
+        <nav class="hidden menu-wrapper md:flex items-center place-content-between px-8 pt-8 pb-8 pe-8"
         >
           <ul class="menu flex flex-row space-x-10">
             <li><a href="#" class="home">Home</a></li>
@@ -49,7 +48,33 @@
           <a href="#" class="btn">RSVP <i class="fa-solid fa-chevron-right"></i>
           </a>
         </nav>
-      </div>
+    </div>
+  </div>  
+      <!-- Mobile Menu Button -->
+    <div class="flex justify-end px-4 py-4 md:hidden bg-[#414042]">
+      <button id="menu-button" class="p-3 focus:outline-none text-black">
+        <!-- Hamburger / Menu Open -->
+        <svg id="menu-open" class="block w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+
+        <!-- Close / X Icon -->
+        <svg id="menu-close" class="hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu sm:flex md:hidden flex-col gap-2">
+      <a href="#" class="block text-black hover:bg-gray-100">Home</a>
+      <a href="#" class="block text-black hover:bg-gray-100">Venue</a>
+      <a href="#" class="block text-black hover:bg-gray-100">Timeline of Event
+      <a href="#" class="block  ext-black hover:bg-gray-100">Bridal Party</a>
+      <a href="#" class="block text-black hover:bg-gray-100">Dress Code</a>
+      <a href="#" class="block text-black hover:bg-gray-100">Travel & Accommodations</a>
+      <a href="#" class="btn-mob block mt-2 w-1/2 px-3 py-3 text-center text-white rounded font-semibold">
+        RSVP <i class="fa-solid fa-chevron-right"></i>
+      </a>
     </div>
 
     <!-- ****************************** -->
@@ -77,8 +102,8 @@
     <div class="cloud" style="background-image: url(images/Group\ 1329.png); background-repeat: no-repeat; background-position: right top; background-size:auto; z-index: 0;">
     <div class="main-section" style="padding-top: 144px; z-index: 1;">
       <div class="container">
-        <div class="venue-detail flex flex-row items-center space-x-10"  >
-          <div class="venue-content" style="width: 60%; padding-right: 150px">
+        <div class="venue-detail flex sm: flex-col-reverse md:flex-row items-center "  >
+          <div class="venue-content sm:w-full md:w-3/5" style="padding-right: 150px">
             <p class="para">Where & When</p>
             <h2 class="venue-heading heading">Venue & Event Details</h2>
             <p class="paragraph" style="padding-right: 120px">
@@ -87,8 +112,8 @@
               <span style="color: #d9886a">June 7th 2025</span>
             </p>
           </div>
-          <div class="slider-wrapper block m-auto" style="width: 40%">
-            <div class="slider flex justify-center">
+          <div class="slider-wrapper m-auto sm:w-full md:w-2/5 justify-center">
+            <div class="slider">
               <div>
                 <img src="/images/DSC_3445.png" alt="" class="image-venue" />
               </div>
@@ -108,8 +133,8 @@
     <div class="cloud-main" style="background-image: url(images/Group\ 1328.png); background-repeat: no-repeat; background-position: left top ; background-size: auto;">
     <div class="main" style="padding-top: 144px; z-index: 1;">
       <div class="container">
-        <div class="location flex">
-          <div class="slider-wrapper" style="width: 50%">
+        <div class="location flex sm: flex-col md:flex-row ">
+          <div class="slider-wrapper sm:w-full md:w-1/2">
             <div class="slider">
               <div>
                 <img
@@ -135,8 +160,8 @@
             </div>
           </div>
           <div
-            class="location-content text-start"
-            style="width: 50%; padding: 110px 95px 110px 89px"
+            class="location-content text-start "
+            style=" padding: 110px 95px 110px 89px"
           >
             <p class="para">Location</p>
             <h2 class="loc-heading" style="margin-top: 30.6px;">Montage Laguna Beach</h2>
@@ -147,7 +172,7 @@
               <a
                 class="icon flex items-center justify-center rounded-full"
                 href="#"
-                style="color: #b8a886; width: 18%"
+                style="color: #b8a886; width:18%"
               >
                 <i class="fa-solid fa-location-dot fa-lg"></i>
               </a>
@@ -184,8 +209,10 @@
 
           <!-- Lightbox Image -->
           <img id="lightbox-img" src="" alt="Expanded Image" 
-              style="width: 70%; height: 580px;">
+                    class="max-w-full max-h-[90vh]">
         </div>
+
+        
  
           <div
             class="map-content flex flex-row items-start"
@@ -264,8 +291,8 @@
     <!--Wedding Theme style section-->
     <div class="wedding-style" style="padding-top: 144px; padding-bottom: 144px;">
       <div class="container">
-        <div class="wedding flex flex-row">
-          <div class="wedding-content" style="width: 50%;">
+        <div class="wedding flex sm: flex-col-reverse md:flex-row">
+          <div class="wedding-content sm:w-full md:w-1/2" >
             <p class="para" style="margin-top: 43px;">Wedding Theme/Style</p>
             <h2 class="loc-heading" style="margin-top: 30.35px;">What to Wear</h2>
             <h3 class="subheading">Elevated Garden Party</h3>
@@ -284,7 +311,7 @@
               </p>
             </div>
             <p
-              class="cont-para"
+              class="cont-para p"
               style=" margin-top: 50px; padding-right: 120px;">
               For fun inspiration, follow this
               <a href="" style="color: #d9886a">link!</a> <br /><br />
@@ -292,7 +319,7 @@
               special day with us.
             </p>
           </div>
-          <div class="wedding-img" style="width: 50%">
+          <div class="wedding-img sm:w-full md:w-1/2">
             <img
               src="images/Container images.png"
               alt=""
@@ -306,7 +333,7 @@
 
           <!-- Lightbox Image -->
           <img id="lightbox-img" src="" alt="Expanded Image" 
-              style="width: 450px; height: 550px;">
+              class="max-w-full max-h-[50vh]">
         </div>
           </div>
         </div>
@@ -318,8 +345,8 @@
       style="padding-top: 144px; padding-bottom: 144px; background-image: url(images/Group\ 1345.png); background-repeat: no-repeat; background-position: bottom center;"
     >
       <div class="container">
-        <div class="acc-content shadow-md flex flex-row items-center">
-          <div class="acc-img" style="width: 50%">
+        <div class="acc-content flex sm: flex-col md:flex-row justify-center items-center">
+          <div class="acc-img sm:w-full md:w-1/2">
             <img src="images/image.png" alt="" style="width: 100%"  onclick="openLightbox(this)"/>
           </div>
           <div id="lightbox" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
@@ -328,11 +355,11 @@
           
           <!-- Lightbox Image (fixed size with Tailwind) -->
           <img id="lightbox-img" src="" alt="Expanded Image" 
-              style="width: 450px; height: 550px;">
+               class="max-w-full max-h-[50vh]">
         </div>
           <div
-            class="acc-cont"
-            style="width: 50%; padding: 125px 106px 125px 119px"
+            class="acc-cont sm:w-full md:w-1/2"
+            style="padding: 125px 106px 125px 119px"
           >
             <p class="para">Accomodations</p>
             <h2 class="acc-heading" style="margin-top: 30px">
@@ -354,10 +381,10 @@
     <!--Wedding Party-->
     <div class="wedding-party" style="background-color: #d9886a">
       <div class="container">
-        <div class="wedding-content flex flex-row items-center">
-          <div class="wed" style="width: 45%; padding: 248px 160px 248px 0px">
+        <div class="wedding-content flex sm: flex-col-reverse md:flex-row items-center">
+          <div class="wed sm:w-full md:w-[45%]" style=" padding: 248px 160px 248px 0px">
             <h2 class="loc-heading" style="color: white">Our Wedding Party</h2>
-            <p
+            <p class="wed-para"
               style="
                 color: white;
                 font-size: 18px;
@@ -374,14 +401,14 @@
               Smith, will be officiating the wedding ceremony.
             </p>
           </div>
-          <div class="wed-image" style="width: 55%">
+          <div class="wed-image sm:w-full md:w-[55%]" >
             <img src="images/image (1).png" alt="" width="100%" onclick="openLightbox(this)" />
           </div>
             <div id="lightbox" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 ">
           <!-- Close button -->
           <span class="text-white text-4xl cursor-pointer" onclick="closeLightbox()" style="position: absolute; top: 100px; right: 580px;">&times;</span>
           
-          <img id="lightbox-img" src="" alt="Expanded Image" style="max-width: 90%; max-height: 90%; object-fit: cover; padding: 180px;">
+          <img id="lightbox-img" src="" alt="Expanded Image"  class="max-w-full max-h-[50vh]">
 >
 
       
@@ -398,9 +425,9 @@
           class="form-content flex flex-row justify-center items-center text-center"
           style="padding-bottom: 69px"
         >
-          <div class="formcontent" style="width: 55%">
+          <div class="formcontent sm:w-full md:w-[55%]">
             <h2 class="heading">RSVP</h2>
-            <p class="form-para" style="margin-top: 60px; padding-right: 6px;">
+            <p class="form-para" style="margin-top: 60px; padding-right: 320px; padding-left: 300px;">
               We can't wait to celebrate with you! Please let us know if you'll
               be joining us by <span style="color: #d9886a;">April 1</span>. We’re so excited to share this special
               day with you!
@@ -454,7 +481,7 @@
                   ><strong>Can you Attend?</strong></span
                 >
                 <label
-                  class="flex items-center gap-2"
+                  class=" radio flex items-center gap-2"
                   style="padding-left: 106px"
                 >
                   <input type="radio" name="attend" id="attend" />
@@ -462,7 +489,7 @@
                 </label>
 
                 <label
-                  class="flex items-center gap-2"
+                  class=" radion flex items-center gap-2"
                   style="padding-left: 77px"
                 >
                   <input type="radio" name="attend" id="notattend" />
@@ -477,11 +504,11 @@
                 placeholder="No. of Adults"
               />
               <div
-                class="flex flex-col items-center"
+                class="formdiv flex flex-col items-center"
                 style="padding-left: 195px; padding-right: 260px"
               >
                 <p
-                  class="text-center"
+                  class="formdivp text-center"
                   style="
                     font-size: 18px;
                     line-height: 29px;
@@ -497,7 +524,7 @@
                   type="submit"
                   class="btn"
                   value="Send"
-                  style="width: 582px"
+                  style="padding: 19px 90px;"
                 />
               </div>
             </form>
@@ -523,7 +550,7 @@
       <div class="container">
         <div class="footer-content flex flex-col px-8 pt-16 pe-8">
           <div class="menu-wrapper">
-            <ul class="menu flex flex-row justify-center gap-10">
+            <ul class="menu flex flex-row sm: flex-wrap justify-center sm: gap-5 md:gap-10">
               <li><a href="#">Home</a></li>
               <li><a href="#">Venue</a></li>
               <li><a href="#">Timeline of Events</a></li>
@@ -531,7 +558,7 @@
               <li><a href="#">Dress Code</a></li>
               <li><a href="#">Travel & Accommodations </a></li>
             </ul>
-            <div class="copyright flex justify-center px-8 pb-5 pe-8 mt-4">
+            <div class="copyright flex justify-center sm: px-2 md:px-8 pb-5 sm: pe-2  md:pe-8 mt-4">
               <p>© 2025 Jared & Cathy. All rights reserved.</p>
             </div>
           </div>
@@ -578,7 +605,22 @@
           { breakpoint: 600, settings: { arrows: true, dots: true } },
         ],
       });
-   
+   //menu
+  const btn = document.getElementById('menu-button');
+  const menu = document.getElementById('mobile-menu');
+  const openIcon = document.getElementById('menu-open');
+  const closeIcon = document.getElementById('menu-close');
+
+  // Initial state: menu closed, show hamburger
+  menu.classList.add('hidden');
+  openIcon.classList.remove('hidden');
+  closeIcon.classList.add('hidden');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');       // toggle menu
+    openIcon.classList.toggle('hidden');   // toggle hamburger
+    closeIcon.classList.toggle('hidden');  // toggle X
+  });
       //add sticky header 
       let header = document.getElementById('sticky');
       window.addEventListener("scroll", function(){
